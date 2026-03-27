@@ -161,6 +161,12 @@ function packagesSchema() {
 						}),
 					)
 					.optional(),
+				reexport: z
+					.object({
+						packageName: z.string(),
+						apiName: z.string(),
+					})
+					.optional(),
 			}),
 		),
 	});

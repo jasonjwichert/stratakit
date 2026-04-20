@@ -363,7 +363,12 @@ function createTheme() {
 				},
 			},
 			MuiPaper: { defaultProps: { component: Role.div } },
-			MuiPopover: { defaultProps: { component: Role.div } },
+			MuiPopover: {
+				defaultProps: {
+					component: Role.div,
+					slotProps: { paper: { role: "dialog" } },
+				},
+			},
 			MuiRadio: {
 				defaultProps: {
 					component: Role.span,
